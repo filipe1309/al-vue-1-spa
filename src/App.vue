@@ -1,7 +1,11 @@
 <template>
   <div>
     <h1>{{ titulo }}</h1>
-    <img v-bind:src="foto.url" :alt="foto.titulo">  
+
+    <ul>
+      <li v-for="foto of fotos"><img v-bind:src="foto.url" :alt="foto.titulo">  </li>
+    </ul>
+    
   </div>
 </template>
 
@@ -10,10 +14,16 @@ export default {
   data() {
     return {
       titulo: 'Alurapic',
-      foto: {
-        url: 'https://amoraospets.com/wp-content/uploads/2019/01/dachshund.jpg',
-        titulo: 'cachorro'
-      }
+      fotos: [
+        {
+          url: 'https://amoraospets.com/wp-content/uploads/2019/01/dachshund.jpg',
+          titulo: 'cachorro'
+        },
+        {
+          url: 'https://amoraospets.com/wp-content/uploads/2019/01/dachshund.jpg',
+          titulo: 'cachorro2'
+        }
+      ]
     }
   }
 }
