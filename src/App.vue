@@ -14,17 +14,14 @@ export default {
   data() {
     return {
       titulo: 'Alurapic',
-      fotos: [
-        {
-          url: 'https://amoraospets.com/wp-content/uploads/2019/01/dachshund.jpg',
-          titulo: 'cachorro'
-        },
-        {
-          url: 'https://amoraospets.com/wp-content/uploads/2019/01/dachshund.jpg',
-          titulo: 'cachorro2'
-        }
-      ]
+      fotos: []
     }
+  },
+
+  created() {
+    this.$http.get('http://localhost:3000/v1/fotos')
+      .then(res => res.json())
+      .then(fotos => this.fotos = fotos, err => console.log(err));
   }
 }
 </script>
