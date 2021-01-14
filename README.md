@@ -19,6 +19,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 # Notes
 
+```
 npm install vue-cli -g
 vue --version
 vue init webpack-simple alurapic
@@ -30,4 +31,4 @@ Babel = ECMAScript transpiler
 Webpack = Module bundler
 
 Interpolation = unidirectional data binding
-
+```
