@@ -26,9 +26,19 @@ vue init webpack-simple alurapic
 cd alurapic
 npm install
 npm run dev
+```
 
 Babel = ECMAScript transpiler
 Webpack = Module bundler
 
 Interpolation = unidirectional data binding
-```
+- Not allow in tags attributes, like `src="{{ myData }}"`, instead we must use `v-bind:src="myData"` or `:src="myData"` with the data
+
+Directives
+ - v-for
+ - v-bind
+
+API
+cd api
+npm start
+http://localhost:3000/v1/fotos
