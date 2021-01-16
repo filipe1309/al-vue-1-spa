@@ -37,8 +37,8 @@ npm run dev
 
 Directives
  - `v-for`
- - `v-bind` from data source to view
- - `v-on` from view to data source
+ - `v-bind:`or `:` from data source to view
+ - `v-on:` or `@` from view to data source
 
 ### API
 ```
