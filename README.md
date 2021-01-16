@@ -36,8 +36,9 @@ npm run dev
 - Not allow in tags attributes, like `src="{{ myData }}"`, instead we must use `v-bind:src="myData"` or `:src="myData"` with the data
 
 Directives
- - v-for
- - v-bind
+ - `v-for`
+ - `v-bind` from data source to view
+ - `v-on` from view to data source
 
 ### API
 ```
