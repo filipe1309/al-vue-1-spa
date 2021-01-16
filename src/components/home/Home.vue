@@ -8,8 +8,10 @@
       <li class="lista-fotos-item" v-for="foto of fotoComFiltro">
         
         <meu-painel :titulo="foto.titulo">
+
           <imagem-responsiva :url="foto.url" :titulo="foto.titulo"/>
-          <meu-botao tipo="button" rotulo="REMOVER"/>
+          <meu-botao tipo="button" rotulo="REMOVER" @botaoAtivado="remove(foto)" :confirmacao="true" estilo="perigo"/>
+        
         </meu-painel>
       
       </li>
@@ -46,6 +48,12 @@ export default {
       }
 
       return this.fotos;
+    }
+  },
+
+  methods: {
+    remove(foto) {
+      alert('Remove ' + foto.titulo);
     }
   },
 
