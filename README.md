@@ -47,9 +47,14 @@ npm start
 ```
 http://localhost:3000/v1/fotos
 
-No root
+In root dir
 ```
 npm install vue-resource --save
 ```
 
 https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
+
+In root dir
+```
+npm install vue-router --save
+```
